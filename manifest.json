@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "SciHub button for Google Scholar",
+    "description": "Add a button to Google Scholar to open the paper in SciHub",
+    "action": {
+        "default_icon": "icons/ravenround_hs.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://scholar.google.com/*"],
+          "js": ["content-script.js"]
+        }
+    ],
+    "icons": {
+        "48": "icons/ravenround_hs.png",
+        "128": "icons/ravenround_hs.png"
+    }
+}
